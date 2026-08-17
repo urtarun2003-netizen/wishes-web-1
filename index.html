@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VibeWish — Birthday Surprise</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="confetti"></div>
+<main class="app">
+
+<section class="screen active" id="nameScreen">
+  <div class="card">
+    <div class="icon">✨</div>
+    <p class="eyebrow">A little surprise is waiting</p>
+    <h1>Hey there! 💖</h1>
+    <p>What's your name?</p>
+    <input id="nameInput" maxlength="30" placeholder="Enter your name" autocomplete="name">
+    <button class="primary" id="nameBtn">Continue →</button>
+    <small id="nameError"></small>
+  </div>
+</section>
+
+<section class="screen" id="welcomeScreen">
+  <div class="center">
+    <div class="icon">✦</div>
+    <p class="eyebrow">A message just for you</p>
+    <h2>Hello, <span id="welcomeName"></span>! ❤️</h2>
+    <p class="type" id="welcomeText"></p>
+    <button class="primary" id="worldBtn">Enter Our World 🌎</button>
+  </div>
+</section>
+
+<section class="screen" id="birthdayScreen">
+  <div class="card">
+    <div class="balloons">🎈 🎈 🎈</div>
+    <p class="eyebrow">Today is all about you</p>
+    <h2>Happy Birthday</h2>
+    <h3 id="birthdayName"></h3>
+    <div class="cake">🎂</div>
+    <p>Wishing you a day full of smiles, beautiful moments and unforgettable memories.</p>
+    <button class="primary" id="photosBtn">Open Your Memories 📸</button>
+  </div>
+</section>
+
+<section class="screen" id="photosScreen">
+  <div class="card wide">
+    <p class="eyebrow">Chapter 01</p>
+    <h2>Our Memorable Photos 📸</h2>
+    <p>Some moments are meant to be remembered forever.</p>
+    <div class="photo-grid">
+      <div class="photo">📷<span>Beautiful moment</span></div>
+      <div class="photo">🌸<span>A happy memory</span></div>
+      <div class="photo">✨<span>A special day</span></div>
+      <div class="photo">💗<span>Always remember</span></div>
+    </div>
+    <button class="primary" id="messageBtn">Read Your Message 💌</button>
+  </div>
+</section>
+
+<section class="screen" id="messageScreen">
+  <div class="card">
+    <p class="eyebrow">Chapter 02</p>
+    <h2>A Message For You 💌</h2>
+    <div class="letter">
+      <p>Dear <strong id="messageName"></strong>,</p>
+      <p>Today isn't just another day. It's a reminder of how wonderful it is that you are here.</p>
+      <p>May your life be filled with beautiful memories, genuine smiles, exciting adventures and people who always make you feel special.</p>
+      <p>Keep shining, keep smiling and never forget how amazing you are. ❤️</p>
+      <p class="signature">With lots of love ✨</p>
+    </div>
+    <button class="primary" id="finalBtn">One Last Surprise 🎁</button>
+  </div>
+</section>
+
+<section class="screen" id="finalScreen">
+  <div class="center">
+    <div class="gift" id="gift">🎁</div>
+    <p class="eyebrow">The final surprise</p>
+    <h2 id="finalTitle">Ready?</h2>
+    <p id="finalSub">There's one little thing left...</p>
+    <button class="primary" id="openGiftBtn">Open It 💖</button>
+    <div class="final-message hidden" id="finalMessage">
+      <div class="heart">❤️</div>
+      <h2>Happy Birthday, <span id="finalName"></span>!</h2>
+      <p>You are more special than you know. May this new year of your life be your most beautiful one yet. ✨</p>
+      <button class="secondary" id="restartBtn">Replay Surprise ↻</button>
+    </div>
+  </div>
+</section>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
